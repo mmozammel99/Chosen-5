@@ -1,3 +1,10 @@
+// body background color 
+document.querySelector('body').style.backgroundColor = "#191919";
+
+
+
+
+// player list 
 const messiObject = {
     name: "Lionel Messi",
     imageUrl: "images/messi.png",
@@ -29,29 +36,39 @@ const renatoObject = {
     performance: "36 Goals . 120 Assist"
 };
 
-
+// player card function 
 function card(player) {
     const cardSection = document.getElementById('card-section');
     const div = document.createElement("div");
-    div.innerHTML = `
-                <div class="card px-0 bg-black border" >
+    div.innerHTML =
+        ` <div class="card px-0 bg-black border" >
                 <img src=${player.imageUrl} class="card-img-top" alt="...">
                 <div class="card-body text-center text-white">
-                  <h3 class="card-title">${player.name}</h3>
+                  <h4 class="card-title">${player.name}</h4>
                   <p class="card-text text-secondary">${player.performance}</p>
-                  <a href="#" class="btn btn-primary">SELECT</a>
+                  <button class="btn btn-primary" onclick="addToCard(this)">SELECT</button>
                 </div>
-              </div>
+              </div> `
 
-`
+    cardSection.appendChild(div)
 
-cardSection.appendChild(div)
-    console.log(player);
 
 };
+
+// call player for card 
+
 card(messiObject)
 card(neymarObject)
 card(mbappeObject)
 card(vitorObject)
 card(ramosObject)
 card(renatoObject)
+
+
+
+
+
+
+
+
+

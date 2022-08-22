@@ -1,17 +1,26 @@
 /* google font  */
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 
+/* utlity */
 body {
   padding: 0;
   margin: 0;
-  background-color: #191919 !important;
 }
 
+input {
+  height: 30px;
+  width: 120px;
+}
+
+/* top banner  */
+
 .top-banner {
-    padding-top: 160px;
+  padding-top: 160px;
   height: 480px;
   background-image: url("../images/top-banner.png");
+  background-repeat: no-repeat;
 }
+
 .top-banner h1 {
   font-family: "Berkshire Swash", cursive;
 }

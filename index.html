@@ -26,48 +26,62 @@
     </header>
     <!-- main section  -->
     <main>
-        <section class="container mx-5 mt-5">
+        <section class="container mt-5">
             <div class="row g-4">
                 <!-- player card section  -->
                 <div class="col-9">
                     <div id="card-section" class="row row-cols-1 row-cols-md-3 g-4">
+
                     </div>
                 </div>
                 <!-- calculation section  -->
-                <div class="col-3">
-                    <div class="text-light bg-black rounded p-3" style="height:350px ;" >
-                    <h5 class="text-center">Selected - V</h5>
-                    <img class="ps-5" src="images/Ureg-Ureg Marker.png" alt="">
+                <div class="col-3 text-white">
+                    <!-- player Selected section -->
+                    <div class="text-light bg-black rounded p-3 mb-4" style="height:350px ;">
+                        <h5 class="text-center">Selected - <span id="total-player">0</span></h5>
+                        <img class="ps-5" src="images/Ureg-Ureg Marker.png" alt="">
+                        <div id="list-fild" class=" m-3">
+
+                        </div>
+                    </div>
+                    <!-- Budget section -->
+                    <div class="text-light bg-black rounded p-3" style="height:480px ;">
+                        <h5 class="text-center">Budget</h5>
+                        <img class="ps-5" src="images/Ureg-Ureg Marker.png" alt="">
+                        <div class="d-flex mt-3">
+                            <p>Per Player</p> <input class="ms-4 bg-black border text-white" type="text">
+                        </div>
+                        <a class="btn btn-primary d-flex justify-content-center mt-3">Calculate</a>
+                        <div class="d-flex justify-content-around mt-3">
+                            <p>Player Expenses</p>
+                            <p>$<span>0</span></p>
+                        </div>
+                        <div class="d-flex mt-3">
+                            <p>Manager</p> <input class="ms-4 bg-black border text-white" type="text">
+                        </div>
+                        <div class="d-flex mt-3">
+                            <p>Coach</p> <input class="ms-5 bg-black border text-white" type="text">
+                        </div>
+                        <a class="btn btn-primary d-flex justify-content-center mt-3 ">Calculate Total</a>
+                        <div class="d-flex justify-content-around mt-3">
+                            <p>Calculate Total</p>
+                            <p class="text-danger">$<span>0</span></p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div>
-
             </div>
 
         </section>
 
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- footer section  -->
     <footer class="text-center mt-5 p-5 text-light border-top">
         <p>Copyright @ 2022 All Rights Reserved.</p>
     </footer>
     <!-- java script  -->
+    <script src="js/card.js"></script>
     <script src="js/app.js"></script>
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
