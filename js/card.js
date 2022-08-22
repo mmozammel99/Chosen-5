@@ -46,7 +46,7 @@ function card(player) {
                 <div class="card-body text-center text-white">
                   <h4 class="card-title">${player.name}</h4>
                   <p class="card-text text-secondary">${player.performance}</p>
-                  <button class="btn btn-primary" onclick="addToCard(this)">SELECT</button>
+                  <button class="btn btn-primary" onclick="addToCard(this); this.disabled=true;">SELECT</button>
                 </div>
               </div> `
 
